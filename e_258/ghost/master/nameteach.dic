@@ -3,11 +3,6 @@
 
 //This file is fairly short, so don't worry! It shouldn't take you too long to finish.
 
-//Make sure to read the walkthrough (http://www.ashido.com/ukagaka/walkthrough.html) for more details about how to properly format ghost dialogue!
-//I will reiterate that you should be editing these in Notepad++, and in particular, you should set the Language to C (or Java I guess) to properly highlight all the text. It will make things A LOT EASIER for you, trust me! It will also help you keep track of your brackets in case you forget some. If you click on a line with a bracket in Notepad++, it should highlight where the other bracket ends, or turn purple if there's no finishing bracket (which you should definitely fix!)
-//It will also highlight my commented lines in green, so you'll know where they are. Any line beginning with // is a commented line that the code will not read. It's just for your reference!
-
-
 //--OnTeachName
 //This is called from the config menu in the main character's double click menu when the user says they want to change their name. If you look in menu.dic you'll see the code leading to here.
 
@@ -55,24 +50,7 @@ OnNameTeach
 {
 	tempname = reference0 //this stores the name value temporarily in reference0
 	
-	if reference0 == "Girl" || reference0 == "girl" //this checks to see if the user input the name "Girl" OR (that's what || means) "girl". You may want to put in a check here if the user tries to name themselves the same name as your characters, since that could be confusing in dialogue. Or just a response to any kind of strange name, like Barack Obama or Cindy Crawford or Mike Nelson or Random Hajile. Or you can prevent certain offensive names if you don't want users using them. Really the power is yours here. The OR operator there with "Girl" and "girl" is to cover people using lowercase as well. More on operators in the walkthrough page on coding.
-	{
-		"\0\s[0]That's my name.\w8\1\s[10]That might be confusing. You should try again.\![open,inputbox,OnNameTeach,-1]"
-		//Note here that it's using the same tag as above to reopen the text box to let the user put in another name. You can replace the dialogue with whatever as long as you keep the \![open,inputbox,OnNameTeach,-1] tag.
-	}
-	elseif reference0 == "Triangle" || reference0 == "triangle" //like the above, this checks to see if the user put in Triangle OR triangle. Again, this is mostly to avoid confusion in dialogue between the user and the characters.
-	{
-		"\1\s[10]That's my name. Try putting in another one.\![open,inputbox,OnNameTeach,-1]"
-		//See again that this ends with the same tag to reopen the input box. Again, replace but keep the \![open,inputbox,OnNameTeach,-1] tag at the end.
-	}
-	elseif reference0 == "" || reference0 == " " || reference0 == "   " //This is if the user doesn't put in a name at all, since that'd also get awkward in dialogue. Admittedly if a user REALLY wanted to put a ton of spaces as their name, the OR operators can only go so far, but this situation would mostly come up by accident I'd figure from a user hitting enter too quickly.
-	{
-		username = "NULL" //this sets the user's name to NULL.
-		
-		"\1\s[10]You didn't put in anything.\w8\0\s[0]We will call you NULL.\e"
-		//You can change this snip to whatever.
-	}
-	else //if the user put in something not specified above, ie a proper name the ghost can use. 
+	
 	{
 		"\0\s[0]Do you want a title?\w4\n\n[half]\![*]\q[Nope,titlenone]\n"
 		//You can replace "\0\s[0]Do you want a title?", but don't touch the rest of it.

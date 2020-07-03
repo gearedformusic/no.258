@@ -147,7 +147,7 @@ OnInstallRefuse
 
 OnVanishSelecting
 {
-	"\0\s[0]The user is deciding whether or not to uninstall us.\w8\1\s[10]If you're testing this, be careful about what you click here, huh?\e"
+	"\0\s[0]Release Mudkip?\e"
 }
 
 //OnVanishSelected
@@ -155,7 +155,7 @@ OnVanishSelecting
 
 OnVanishSelected
 {
-	"\0\s[0]The user has decided to uninstall us.\w8\1\s[10]Bye.\w9\w9\e"
+	"\0\s[0]Bye-bye, Mudkip!\e"
 }
 
 
@@ -164,7 +164,7 @@ OnVanishSelected
 
 OnVanishCancel
 {
-	"\0\s[0]The user has decided not to uninstall us after all.\e"
+
 }
 
 //--TalkVanishButtonHold
@@ -172,7 +172,7 @@ OnVanishCancel
 
 TalkVanishButtonHold
 {
-	"\1\s[10]This dialogue displays when the user holds down the uninstall button.\e"
+	
 }
 
 
