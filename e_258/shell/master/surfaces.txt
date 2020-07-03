@@ -245,7 +245,7 @@ surface2
 }
 
 //mudkipMouth
-//Animation for barking/eating.
+//Animation for barking.
 surface3
 {
 	element0,overlay,surface0.png,0,0
@@ -269,6 +269,58 @@ surface4
 	3pattern1,1101,50,replace,0,0
 	3pattern2,-1,200,replace,0,0
 }
+
+//mudkipEat
+//Animation for eating a yellow pokeblock.
+surface5
+{
+	element0,overlay,surface0.png,0,0
+	
+	4interval,runonce
+	4pattern0,-1,20,replace,0,0
+	4pattern1,1302,20,replace,0,0
+	4pattern2,1301,10,replace,0,0
+	4pattern3,1302,150,replace,0,0
+	4pattern4,1303,20,replace,0,0
+	4pattern5,1304,20,replace,0,0
+	4pattern6,1303,20,replace,0,0
+	4pattern7,1302,20,replace,0,0
+	4pattern8,1303,20,replace,0,0
+	4pattern9,1304,20,replace,0,0
+	4pattern10,1303,20,replace,0,0
+	4pattern11,1302,20,replace,0,0
+	4pattern12,1303,20,replace,0,0
+	4pattern13,1304,20,replace,0,0
+	4pattern14,1303,20,replace,0,0
+	4pattern15,1302,20,replace,0,0
+	4pattern16,1303,20,replace,0,0
+	4pattern17,1304,20,replace,0,0
+	4pattern18,1303,20,replace,0,0
+	4pattern19,1302,20,replace,0,0
+	4pattern20,-1,50,replace,0,0
+}
+
+//mudkipHop
+//Animation for Mudkip to do a small hop.
+surface6
+{
+	element0,overlay,surface0.png,0,0
+	
+	5interval,runonce
+	5pattern0,-1,20,replace,0,0
+	5pattern1,1102,20,replace,0,0
+	5pattern2,-1,20,replace,0,0
+	5pattern3,-1,5,move,0,-10
+	5pattern4,-1,5,move,0,-15
+	5pattern5,-1,20,move,0,0
+	5pattern6,1102,10,replace,0,0
+	5pattern7,-1,20,replace,0,0
+	
+}	
+
+//mudkipFetch (For v1.1)
+//Animation to throw a ball and have Mudkip fetch it.
+
 
 
 //--RunTest---------------------------------------------------------------------------

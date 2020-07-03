@@ -4,10 +4,6 @@
 
 //The complexity of this file depends on how customized you want your menus. If you just want to leave them as they are, then all you'll have to do is replace dialogue appropriately. You can always add stuff to their menus later if you get the urge. Otherwise, if you have plans in mind, you'll need to study what's going on in here carefully and pay attention to how things are set up! You can do a lot of unique stuff in this file if you're creative.
 
-//Make sure to read the walkthrough (http://www.ashido.com/ukagaka/walkthrough.html) for more details about how to properly format ghost dialogue!
-//I will reiterate that you should be editing these in Notepad++, and in particular, you should set the Language to C (or Java I guess) to properly highlight all the text. It will make things A LOT EASIER for you, trust me! It will also help you keep track of your brackets in case you forget some. If you click on a line with a bracket in Notepad++, it should highlight where the other bracket ends, or turn purple if there's no finishing bracket (which you should definitely fix!)
-//It will also highlight my commented lines in green, so you'll know where they are. Any line beginning with // is a commented line that the code will not read. It's just for your reference!
-
 
 //--OpenSakuraMenu
 //This is a bit of intro dialogue before the main character opens their menu. You can see below that there are three pieces of separate dialogue listed before it goes to MenuRun. The character will randomly choose one of those pieces of dialogue before opening the rest of their menu. You can customize this with individual greetings for the character, such as "Yes, %(username)?" or "Need something, %(username)?" or things like that. Note that none of the lines end with \e!
@@ -15,8 +11,6 @@
 
 OpenSakuraMenu
 {
-		"\0\s[0]\b2What would you like to do?"
-		--
 		MenuRun
 }
 
@@ -31,28 +25,16 @@ MenuRun
  	nowhour = Getnowhour
 	//These four statements basically get the day of the week, whether it's AM or PM, the hour, and the time. It's putting together the information to display the time at the bottom of the balloon. Pay it no mind.
 	--
-	"\n\n\_q\b2" //The \n\n means two new lines as detailed in the walkthrough, and \_q means quick session, meaning all the text from this point on will display instantly instead of a few letters at a time like normal ghost dialogue.
+	"\0\s[0]\b1What would you like to do?\n\n\_q" //The \n\n means two new lines as detailed in the walkthrough, and \_q means quick session, meaning all the text from this point on will display instantly instead of a few letters at a time like normal ghost dialogue.
 	--
-	if lastTalk != "" //What this does is check to see if the ghost has already said a random bit of dialogue on its own, essentially by seeing if the lastTalk thing is NOT empty (!= means "does not equal").
-	{
-	  "\![*]\q[Repeat Last Dialogue,OnLastTalk]\n\n[half]"
-	  //If the ghost has said something, it will then display this menu option. You can replace "Repeat Last Dialogue" with whatever caption you like, such as "What were you saying?" or "What did you say?" or "Could you repeat that?" or something like that.
-	  
-	  //*********************Advanced User Info*******************************
-	  //These text boxes are meant for those who have an interest in expanding or using more complicated functions in their ghost. Also for my own reference in the future since I plan on using this template too, haha. If you have no interest in any of this and just want to keep things as simple as possible, feel free to skip these boxes.
-	  
-	  //I briefly touched in bootend.dic about \q, but I'll again cover it here. Pay very close attention to how this bit of dialogue is formatted. You'll see it goes \![*]\q[Displayed Name,linkedfunction]. Breaking it down, \![*] puts the balloon's option icon in front of the choice (usually a > or something), \q sets up the choice, Displayed Name which is the text that will display in the ghost's balloon, then linkedfunction, which is what the choice is linked to when the user clicks it. As you go through this file, look at how every menu option is set up, and you will see they all follow this format, give or take a \![*]. If you're going to be adding new options to menus or creating your own functions and such, make sure you follow this format and learn it well. Make sure to read the coding page of the walkthrough.
-	  //***********************************************************************
-	}
-	--
- 	"\![*]\q[Check,altalk]\n"
+ 	"\![*]\q[Check,check]\n"
 	
 	//This option will force the ghost to say something from aitalk if the user clicks it. Just replace "Say something" and "Say something 2" with whatever captions you think would be appropriate for such an option. IF you don't want two options for captions, delete one of the lines.
 	//Advanced users, you can add multiple captions for any option you add to a menu you make just like this, as long as you separate it from the other options into its own section with two dashes above and below.
 	--
-	"\![*]\q[Feed,altalk]\n"
+	"\![*]\q[Feed,feed]\n"
 	--
-	"\![*]\q[Pet,altalk]\n"
+	"\![*]\q[Pet,pet]\n"
 	--
 	"\![*]\q[Config Menu,configmenu]\n/
 	\![*]\q[Functions,dosomething]\n\n[half]/
@@ -132,6 +114,33 @@ Getnowhour
 		}
 }
 
+Select.check
+{
+	//Leads to a variety of different dialogue options
+	"\0\s[3]Mudkip seems happy to be here with you! \w8\s[6]\e"
+	"\0\s[4]Mudkip looks like it might want a snack. \w8\s[3]\e"
+	//"\0\s[6]Mudkip looks like it might want to play fetch.\w8\s[6]\e"
+	"\0\s[3]Mudkip seems very happy to see you! \w8\s[6]\w8\s[6]\e"
+	"\0\s[0]Mudkip seems relaxed. \w8\s[1]\e"
+	"\0\s[0]Mudkip seems curious about what you're doing.\w8\s[0]\e"
+	"\0\s[0]Mudkip is regarding you with adoration! \w8\s[0]\e"
+	"\0\s[2]Mudkip started to run around!\e"	
+
+}
+
+Select.feed
+{
+	"\0\s[5]You gave Mudkip a PokeBlock!\w8 \n\nIt seems pleased.\e"
+}
+
+//In Amie, Mudkip likes to be pet on the cheek fins and dislikes being pet on the head fin
+Select.pet
+{
+	"\0\s[1]You pat Mudkip's forehead.\w8 \n\n\s[1]It seems happy!\e"
+	"\0\s[1]You rub Mudkip's cheek.\w8 \n\n\s[6]It seemed to like that a lot!\e"
+	"\0\s[1]You scratch under Mudkip's chin. \w8 \n\n\s[0]It seemed to like that!\e"
+}
+
 //If someone selects an option linked to BACKTOMENU, it will go back to MenuRun.
 
 Select.BACKTOMENU
@@ -145,6 +154,10 @@ Select.configmenu
 		TalkConfig
 	}
 
+
+
+
+
 //*********************Advanced User Info*******************************
 //Some of you may be wondering why some of these Select.options lead to another function. Why not just put the config menu coding under Select.configmenu, instead of linking to TalkConfig?
 //Basically any function that's preceded with Select. is limited in its complexity and can only be called within its own .dic file in my experience. Why should you care, you ask? Well, if you're going to link to this function any other way, such as linking it in other .dic files or as a page in a menu, it needs to be a stand-alone function so it can be properly called. I'm pretty sure.
@@ -156,20 +169,21 @@ Select.configmenu
 
 TalkConfig
 {
-	"\0\b[2]\_q\" 
+	"\0\s[0]\b1Config Menu\n\n"
 	//This bit of dialogue sets up a large balloon and a quick session, like above, so all the text will appear immediately. The rest is formatted to display the information and options to change it. I wouldn't touch any of it if you don't know what you're doing.
 	//I'll briefly explain the font tags I used here. \f[bold,1] turns bold on, \f[bold,0] turns it off, not unlike a <b> tag. \f[sup,1] turns superscript on (making it tiny and above the text) and \f[sup,0] turns it off. I touch on these tags in the walkthrough on SakuraScript.
-	--
-	"f[bold,1]Your name:\f[bold,0] %(username) \f[sup,1](\q[Change it?,TEACHNAME])\f[sup,0]\n"
-	--
-	"\f[bold,1]Your pronouns:\f[bold,0] %(heshe)/%(himher)/%(hisher) \f[sup,1](\q[Change them?,TEACHPRONOUN])\f[sup,0]\n"
-	--
-	"\f[bold,1]Your birthday:\f[bold,0] %(birthdayprint) \f[sup,1](\q[Change it?,TEACHBDAY])\f[sup,0]\n\n"
-	--
-	"\f[bold,1]Talk Rate:\f[bold,0] - every %(talktime) \f[sup,1](\q[Change it,talkinter])\f[sup,0]\n\n"
+	
+	//--
+	//"f[bold,1]Your name:\f[bold,0] %(username) \f[sup,1](\q[Change it?,TEACHNAME])\f[sup,0]\n"
+	//--
+	//"\f[bold,1]Your pronouns:\f[bold,0] %(heshe)/%(himher)/%(hisher) \f[sup,1](\q[Change them?,TEACHPRONOUN])\f[sup,0]\n"
+	//--
+	//"\f[bold,1]Your birthday:\f[bold,0] %(birthdayprint) \f[sup,1](\q[Change it?,TEACHBDAY])\f[sup,0]\n\n"
+	//--
+	//"\f[bold,1]Talk Rate:\f[bold,0] - every %(talktime) (\q[Change it?,talkinter])\n\n"
 	--		
 		{
-		"\![*]Enable Uninstall? (NOW : %(deleteshitai))\n\q[ON,deleteon] \q[OFF,deleteoff]\n\n[half]\n"
+		"\![*]\_qEnable Uninstall? (NOW : %(deleteshitai))\n\q[ON,deleteon] \q[OFF,deleteoff]\n\n[half]\n"
 		}
 	--
 	"\![*]\q[Back to the menu,BACKTOMENU]\e"
@@ -511,9 +525,6 @@ Select.TEACHNAME
 //If the user selects cancel in a menu. Replace as you like, or just leave them blank.
 Select.CANCEL
 	{
-		"\0\s[0]This is a cancel message.\e"
-		
-		"\0\s[0]This is another cancel message.\e"
  	}
 
 	
@@ -521,10 +532,8 @@ Select.CANCEL
 
 Select.dosomething
 {
- 		"\0\s[0]\b2This is the first function menu intro.\n\n"
- 		"\0\s[0]\b2This is the second function menu intro.\n\n"
-		"\0\s[0]\b2This is the third function menu intro.\n\n"
-		
+ 		"\0\s[0]\b1Function Menu\n\n"
+
 		//I mentioned this above in MenuRun, but you can have a set of multiple different responses that may randomly appear when the menu is opened if you offset them from the rest with the -- dashes below this note. Try opening this menu yourself with the template to see how it works. The character will randomly choose one line as the intro. 
 		//If you don't want to deal with this, just delete the extra lines and leave one. Otherwise, replace the dialogue above as you like, but note that they don't end with \e here. You can leave the rest of this below alone.
 		--
@@ -620,53 +629,6 @@ OnChoiceTimeout
  {
 	//"\0\s[0]The menu has timed out.\e"
  }
-
- 
-//---- Secondary Character Menu ---------------------------------------------------------
-//This section has to do with the menu for the second character. If you don't want your second character to have a menu, you can just delete this whole chunk.
-
-OpenKeroMenu
- {
-	"\1\s[10]\b[2]"
-	"\1\s[15]\b[2]"
-	"\1\s[16]\b[2]"
-	
-	//You've seen so far that you can set up multiple options for menu introductions. You can also set up multiple poses to match up to multiple dialogue. So for example, when you open Triangle's menu, he may randomly do any of these three poses, and randomly choose from any of the four dialogue options below, before continuing with his menu. Make a close note of the -- dashes breaking these up.
- 	--
-	"This is a menu introduction dialogue."
- 	"This is another menu introduction dialogue."
- 	"This is the third menu introduction dialogue."
- 	"This is the fourth menu introduction dialogue."
- 	--
-	"\n\n[half]/
-	\![*]\q[Update,keroupdatecheck]\n/
- 	\![*]\q[Bug report,bugreport]\n\n/
-	\![*]\q[Test variable,testvariable]\n\n/
-	//When you are done with the test variable, aka your ghost is finished or you just don't want it showing up when you publish your ghost beta or whatevs, simply add two // slashes in front of \![*] to comment the line out. In Notepad++, it will turn green. When you want to use it again, erase the two slashes to turn it back to normal.
-	\![*]\q[Nothing,keroCANCEL]\e"
-}
-
-//There are no real set things for the second character to do, really. You can mostly add whatever functions you want to them, their menu is totally free reign. In mine for example, Hunter has some games, a pseudo-FAQ for users, a bug report, an update option, and most importantly, a test variable. A lot of that is fairly complicated though, so I won't get into it here. Advanced Users can pick up Hunter and Smoker and study their menu.dic to see how I did it though, and those who read the coding page of the walkthrough and want to make their own functions can feel free to add them here. 
-//For the purposes of this simple template, I'll include two options that may come in handy - an update option and a bug report option, as well as the test variable.
-
-//If you click cancel. Replace dialogue as you want.
-Select.keroCANCEL
-{
-	"\1\s[10]This is menu cancel dialogue.\e"
-}
-
-
-//This is when they select bug report. This is mostly meant to briefly give the user information about you, the creator, and how to report a problem to you. This can be handy if the person forgot where they got their ghost or how to contact you. Add whatever info you like here.
-Select.bugreport
-{
-"\1\s[10]This is the bug report dialogue. \w5Report bugs to youremailaddress@emailprovider.com. \w5We were downloaded from \_a[http://www.whereveryoupostedthem.com/]some place\_a.\e"
-}
-
-//When clicked, this will automatically tell the ghost to check for updates. More detail on updates in etc.dic. You can leave this alone.
-Select.keroupdatecheck
-{
-	"\1\s[10]\![updatebymyself]\e"
-}
 
 //--Test Variable --------------------------------------------------------
 //I briefly mentioned the test variable in bootend.dic and possibly in etc.dic as well, I'm not sure. What exactly is the test variable? Basically, it's a place you can plug in anything you want to test out. What this means is that you can write some ghost dialogue, then copy and paste it into the test variable dialogue snippet down there, reload your ghost, then choose "test variable" from your second character's menu. Check your dialogue to see if it looks right and if it does, put it back in aitalk, or edit it until it looks right and put it back. While you can use Script Input to test most of your ghost's dialogue, there are some lines it just can't do, and it can't help you test choices. But the test variable can! The dialogue/choices from OnFirstBoot are a prime candidate for testing with this variable.
