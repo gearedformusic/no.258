@@ -116,7 +116,7 @@ Getnowhour
 
 Select.check
 {
-	//Leads to a variety of different dialogue options
+	//Leads to a variety of different dialogue options, same as its idle options
 	"\0\s[3]Mudkip seems happy to be here with you! \w8\s[6]\e"
 	"\0\s[4]Mudkip looks like it might want a snack. \w8\s[3]\e"
 	//"\0\s[6]Mudkip looks like it might want to play fetch.\w8\s[6]\e"

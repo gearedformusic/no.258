@@ -18,9 +18,9 @@
 OnTranslate
 	{
 	_talk = reference0
- 	_talk = REPLACE(_talk, "Anchor 1", "\_a[anchor1]Anchor 1\_a")
- 	_talk = REPLACE(_talk, "Anchor 2", "\_a[anchor2]Anchor 2\_a")
- 	_talk = REPLACE(_talk, "Anchor 3", "\_a[anchor3]Anchor 3\_a")
+ 	// _talk = REPLACE(_talk, "Anchor 1", "\_a[anchor1]Anchor 1\_a")
+ 	// _talk = REPLACE(_talk, "Anchor 2", "\_a[anchor2]Anchor 2\_a")
+ 	// _talk = REPLACE(_talk, "Anchor 3", "\_a[anchor3]Anchor 3\_a")
 		{
 		"%(_talk)"
 		}

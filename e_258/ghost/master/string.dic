@@ -24,10 +24,10 @@ On_username
 //---- Network Update URL ----------------------------------------------
 //This is the URL where your ghost will look for updates. If you're setting up Network Updates YOU MUST change this to point at the right directory! Otherwise your ghost will not update properly! If you're not going to use the Network Update feature, just leave this section as it is or delete it, it should be fine.
 
-On_homeurl
-{
-	"http://www.somekindofwebhost.com/yourghostsdirectory/"
-}
+// On_homeurl
+// {
+	// "https://github.com/gearedformusic/no.258"
+// }
 
 
 //---- Top Menu Option Caption -----------------------------------------
@@ -35,7 +35,7 @@ On_homeurl
 
 On_recommendrootbutton.caption
  {
-	"Reference Sites"
+	"Ghost/Ukagaka Reference Sites"
 }
 
 
@@ -50,21 +50,6 @@ On_sakura.recommendsites
 	"%ASC(1)http://www.ashido.com/ukagaka/walkthrough.html%ASC(2)"
 	--
 	//And this is the site that it would link to. Note that a website address begins with %ASC(1) and ends with %ASC(2). Don't forget these!
-	
-	"Zarla's LJ"
-	--
-	"%ASC(1)http://zarla.livejournal.com/%ASC(2)"
-	--
-	
-	"Zarla's Tumblr"
-	--
-	"%ASC(1)http://zarla-s.tumblr.com/%ASC(2)"
-	--
-	
-	"Zarla's Dreamwidth"
-	--
-	"%ASC(1)http://zarla.dreamwidth.org/%ASC(2)"
-	--
 	
 	"SSP"
 	--
@@ -92,8 +77,7 @@ On_sakura.recommendsites
 
 On_portalrootbutton.caption
  {
-	"Second Website Caption"
-	"Another Second Website Caption"
+	"No.258 Ghost Reference Sites"
  }
 
  //---- Websites in the Second Option --------------------------------------------------
@@ -101,33 +85,16 @@ On_portalrootbutton.caption
  
 On_sakura.portalsites
  {
- 	"Site Name 1"
-	"Site Name 1 Alternate"
+ 	""
+	"No.258 GitHub"
 	--
-	"%ASC(1)http://somesite.com/%ASC(2)"
+	"%ASC(1)https://github.com/gearedformusic/no.258/%ASC(2)"
 	--
 	//Here, you'll notice that there are two names, a --, then a website bracketed by %ASC(1) and %ASC(2). What this will do is randomly chose between those two site names for the link. So if you open the menu, maybe it will say Site Name 1, or maybe it will say Site Name 1 Alternate. Honestly I find links changing names without warning kind of confusing, but maybe some find it amusing, idk. Put the address of the site you want to link to between the two ASC tags.
 	
-	"Site Name 2"
+	"GearedForMusic's Tumblr"
 	--
-	"%ASC(1)http://www.anothersite.org/%ASC(2)"
-	--
-	
-	//If you want to keep things simple, you can just give each website one name like so.
-	
-	"Site Name 3"
-	--
-	"%ASC(1)http://www.thirdsite.com/%ASC(2)"
-	--
-	"Site Name 4"
-	--
-	"%ASC(1)http://www.fourthsite.com/%ASC(2)"
-	--
-	"Site Name 5"
-	--
-	"%ASC(1)http://www.fifthsite.com/%ASC(2)"
-	
-	//You get the idea. You can add more links or take them away as you like following this basic formula.
+	"%ASC(1)https://www.tumblr.com/blog/musing-gears/%ASC(2)"
  }
 
  
@@ -156,18 +123,18 @@ On_kero.recommendsites
  //---- Update Menu Caption ------------------------------------------------------------
  //What it will say on the menu for the option to Update.
  
-On_updatebutton.caption
- {
-	"Update Menu Caption"
-}
+// On_updatebutton.caption
+ // {
+	// "Update Menu Caption"
+// }
 
 //---- Dress-up Menu Caption ----------------------------------------------------------
 //What it will say on the menu for Dress-Up.
 
-On_dressuprootbutton.caption
-{
-	"Dress-Up Caption"
-}
+// On_dressuprootbutton.caption
+// {
+	// "Dress-Up Caption"
+// }
 
 //---- Headlines and RSS Feeds ---------------------------------------------------------
 //You'll see this below uninstall. This is where all the headlines/RSS feeds the user may have subscribed to will be listed, and this is the caption it'll have on the menu.
