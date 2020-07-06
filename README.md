@@ -5,12 +5,12 @@ These are files for no.258, a Mudkip ghost/ukagaka.This ghost was initially crea
 File Descriptions
 -------------------
 
-e_258.nar - The NAR file for the ghost. If you already have SSP installed, you can just drag and drop this file onto a ghost and download.
-z_bluepearl.zip - The balloon used for this ghost. Same as the NAR, you can drag and drop it to install if you already have SSP.
-Pokemon GB.ttf - The font used for the balloon. It was made to mimic the font used in Pokemon Red/Blue. Open it to install the font to your computer.
-README.md - The file you are reading now.
-Installation Guide.md - A guide to a first-time Ghost installation.
-e_258 folder - I'll probably delete this later when I'm sure I've got the hosting all sorted out. You can manually put this folder in your SSP directory to use the ghost.
+1) e_258.nar - The NAR file for the ghost. If you already have SSP installed, you can just drag and drop this file onto a ghost and download.
+2) z_bluepearl.zip - The balloon used for this ghost. Same as the NAR, you can drag and drop it to install if you already have SSP.
+3) Pokemon GB.ttf - The font used for the balloon. It was made to mimic the font used in Pokemon Red/Blue. Open it to install the font to your computer.
+4) README.md - The file you are reading now.
+5) Installation Guide.md - A guide to a first-time Ghost installation.
+6) e_258 folder - I'll probably delete this later when I'm sure I've got the hosting all sorted out. You can manually put this folder in your SSP directory to use the ghost.
 
 -------------------
 Character
