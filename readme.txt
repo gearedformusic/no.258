@@ -2,7 +2,7 @@ These are files for no.258, a Mudkip ghost/ukagaka.
 
 This ghost was initially created as a little birthday present. Time will tell if it gets any more development.
 
-If you've never installed a Ghost before, read on:
+If you've never installed a Ghost before, read the Installation Guide:
 
 *****Install Guide from Zarla (@zarla-s on tumblr), modified for no.258*****
 
