@@ -1,6 +1,8 @@
-*****Install Guide from Zarla (@zarla-s on tumblr), modified for no.258*****
+Install Guide from Zarla (@zarla-s on tumblr), modified for no.258
 
-*****How to Install*****
+----------------
+How to Install
+----------------
 
     The first thing you'll want to do is download and install SSP (http://ssp.shillest.net/ on Windows). While the site is in Japanese, just look for the "complete install package" download on the left. Download it somewhere and install it.
     When that's done, run SSP.exe, the program with the little bell icon. A catgirl named Emily should pop up and start talking to you in Japanese, and end up throwing up a big menu. For now, ignore all of that, and just close the menu when it appears. You can also hold down a key to speed through her text. She's the default Ghost that comes with SSP, if you're curious.
@@ -13,7 +15,9 @@
 
 If you already have SSP coming into this, then all you have to do is drag and drop the respective balloon zip and nar onto your current ghost, and it'll install. 
 
-****If you can't get Emily to install the files*****
+--------------------------------------------
+If you can't get Emily to install the files
+--------------------------------------------
 
 What you can do instead is unpack the files manually. First, extract the z_bluepearl.zip, so you have a folder called "z_bluepearl". Then you'll want to go into SSP's balloon directory... it'd be under SSP\Balloon. You should see two folders in there called "ssp" and "emily4" if you're in the right place. Cut and paste the "z_bluepearl" folder into that folder. Then close and reopen Emily, and check if the Blue-Pearl balloon is listed. If so, then you're good!
 
