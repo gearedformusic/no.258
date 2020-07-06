@@ -32,5 +32,5 @@ Double-click Mudkip to bring up a menu. From there you can check how it's doing 
 -------------------
 Acknowledgements
 -------------------
-Big thanks to Zarla for her Ghost Template (http://www.ashido.com/ukagaka/walkthrough.html), which I actually simplified even further for this ghost.
+Big thanks to Zarla for her Ghost Template (http://www.ashido.com/ukagaka/walkthrough.html), which I actually simplified even further for this ghost, and for her Pokemon Blue-Pearl balloon.
 Also thanks to JoshR691 (https://www.spriters-resource.com/submitter/JoshR691) for his custom Mudkip sprite sheet. 
