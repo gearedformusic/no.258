@@ -6,8 +6,7 @@ These are files for no.258, a Mudkip ghost/ukagaka.This ghost was initially crea
 Character
 -------------------
 
-Pokemon Number 258, Mudkip
-If you downloaded this ghost you probably already know who this is, but this is Mudkip, a Water-Type starter Pokemon for Generation 3 of the Pokemon video games.
+This is Pokemon Number 258, Mudkip. If you downloaded this ghost you probably already know who this is, but this is Mudkip, a Water-Type starter Pokemon for Generation 3 of the Pokemon video games.
 
 
 -------------------
