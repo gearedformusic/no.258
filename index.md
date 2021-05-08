@@ -19,14 +19,17 @@ This is Pokemon Number 258, Mudkip. If you downloaded this ghost you probably al
 
 [t]: Press 't' to make a random interaction happen.
 
-# Header 1
-## Header 2
-### Header 3
-
 ## Features
 
 Ver 1.0: Ghost Release! Basic functions: Idle actions, Double-click Menu functions (Check, Feed, Pet)
 
+## About
+
+This ghost was made as a present for a friend's birthday! It's a very basic ghost; it will mostly stand around and do cute things every 5 minutes or so. Double-click Mudkip to bring up a menu. From there you can check how it's doing (in actuality, run a random idle animation), feed it a PokeBlock, or pet it.
+
+## Acknowledgements
+
+Big thanks to Zarla for her [Ghost Template](http://www.ashido.com/ukagaka/walkthrough.html), which I actually simplified even further for this ghost, and for her Pokemon Blue-Pearl balloon. Also thanks to JoshR691  for his custom [Mudkip sprite sheet](https://www.spriters-resource.com/submitter/JoshR691).
 
 [Link](url) and ![Image](src)
 ```
