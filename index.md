@@ -1,4 +1,5 @@
-## Welcome to No. 258!
+## Welcome to No. 258! 
+![MudkipIcon](https://github.com/gearedformusic/no.258/blob/gh-pages/MudkipIcon.png)
 
 These are files for no.258, a Mudkip ghost/ukagaka.This ghost was initially created as a little birthday present. Time will tell if it gets any more development. If you've never installed a Ghost before, read the [Installation Guide](https://github.com/gearedformusic/no.258/blob/master/Installation%20Guide.md#how-to-install).
 
@@ -30,6 +31,3 @@ This ghost was made as a present for a friend's birthday! It's a very basic ghos
 ## Acknowledgements
 
 Big thanks to Zarla for her [Ghost Template](http://www.ashido.com/ukagaka/walkthrough.html), which I actually simplified even further for this ghost, and for her Pokemon Blue-Pearl balloon. Also thanks to [JoshR691](https://www.spriters-resource.com/submitter/JoshR691) for his [custom Mudkip sprite sheet](https://www.spriters-resource.com/custom_edited/pokemoncustoms/sheet/27611/).
-
-![MudkipIcon](https://github.com/gearedformusic/no.258/blob/gh-pages/MudkipIcon.png)
-
