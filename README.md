@@ -15,7 +15,7 @@ File Descriptions
 -------------------
 Character
 -------------------
-![MudkipIcon](https://github.com/gearedformusic/no.258/blob/gh-pages/MudkipIcon.png)
+![MudkipIcon](https://github.com/gearedformusic/no.258/blob/bf350ff5f055f981fd6c2f958b70869fe50c9aaf/docs/img/MudkipIcon.png)
 
 This is Pokemon Number 258, Mudkip. If you downloaded this ghost you probably already know who this is, but this is Mudkip, a Water-Type starter Pokemon for Generation 3 of the Pokemon video games.
 
