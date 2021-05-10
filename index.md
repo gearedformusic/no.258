@@ -31,5 +31,5 @@ This ghost was made as a present for a friend's birthday! It's a very basic ghos
 
 Big thanks to Zarla for her [Ghost Template](http://www.ashido.com/ukagaka/walkthrough.html), which I actually simplified even further for this ghost, and for her Pokemon Blue-Pearl balloon. Also thanks to [JoshR691](https://www.spriters-resource.com/submitter/JoshR691) for his [custom Mudkip sprite sheet](https://www.spriters-resource.com/custom_edited/pokemoncustoms/sheet/27611/).
 
-![Image](src)
+![MudkipIcon](https://github.com/gearedformusic/no.258/blob/gh-pages/MudkipIcon.png)
 
