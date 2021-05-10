@@ -1,5 +1,5 @@
 ## Welcome to No. 258, a Mudkip Ghost/Ukagaka! 
-![MudkipIcon](https://github.com/gearedformusic/no.258/blob/bf350ff5f055f981fd6c2f958b70869fe50c9aaf/docs/img/MudkipIcon.png)
+![MudkipIcon](./img/MudkipIcon.png)
 
 These are files for no.258, a Mudkip ghost/ukagaka.This ghost was initially created as a little birthday present. Time will tell if it gets any more development. If you've never installed a Ghost before, read the [Installation Guide](https://github.com/gearedformusic/no.258/blob/master/Installation%20Guide.md#how-to-install).
 
