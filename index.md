@@ -32,3 +32,11 @@ This ghost was made as a present for a friend's birthday! It's a very basic ghos
 ## Acknowledgements
 
 Big thanks to Zarla for her [Ghost Template](http://www.ashido.com/ukagaka/walkthrough.html), which I actually simplified even further for this ghost, and for her Pokemon Blue-Pearl balloon. Also thanks to [JoshR691](https://www.spriters-resource.com/submitter/JoshR691) for his [custom Mudkip sprite sheet](https://www.spriters-resource.com/custom_edited/pokemoncustoms/sheet/27611/).
+
+<webring-banner>
+    <p>Member of the <a href="https://ukagakawebring.netlify.com/">Ukagaka/Ghost Development and Download</a> webring</p>
+    <a href="https://ukagakawebring.netlify.com//prev">Previous</a>
+    <a href="https://ukagakawebring.netlify.com//random">Random</a>
+    <a href="https://ukagakawebring.netlify.com//next">Next</a>
+</webring-banner>
+<script async src="https://ukagakawebring.netlify.com//embed.js" charset="utf-8"></script>
